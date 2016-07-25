@@ -1,5 +1,24 @@
 angular.module('starter.controllers', [])
 
+.controller('IndexCtrl', function($scope) {})
+
+.controller('CardCtrl', function($scope, Chats) {
+  $scope.chats = Chats.all();
+  $scope.remove = function(chat) {
+    Chats.remove(chat);
+  };
+})
+
+.controller('SettingCtrl', function($scope) {
+  $scope.settings = {
+    enableFriends: true
+  };
+})
+
+.controller('CardDetailCtrl', function($scope, $stateParams, Chats) {
+  $scope.chat = Chats.get($stateParams.chatId);
+})
+
 .controller('DashCtrl', function($scope) {})
 
 .controller('ChatsCtrl', function($scope, Chats) {

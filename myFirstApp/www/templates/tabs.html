@@ -6,8 +6,20 @@ navigation history that also transitions its views in and out.
 <ion-tabs class="tabs-icon-top tabs-color-active-positive">
 
   <!-- Dashboard Tab -->
+  <!--
   <ion-tab title="Status" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/dash">
     <ion-nav-view name="tab-dash"></ion-nav-view>
+  </ion-tab>
+  -->
+
+  <!-- Index Tab -->
+  <ion-tab title="Status" icon-off="ion-android-notifications-none" icon-on="ion-android-notifications" href="#/tab/index">
+    <ion-nav-view name="tab-index"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Cards Tab -->
+  <ion-tab title="Cards" icon-off="ion-ios-paper-outline" icon-on="ion-ios-paper" href="#/tab/card">
+    <ion-nav-view name="tab-card"></ion-nav-view>
   </ion-tab>
 
   <!-- Chats Tab -->
@@ -24,6 +36,7 @@ navigation history that also transitions its views in and out.
 
   <!-- Setting Tab -->
   <ion-tab title="Setting" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tab/setting">
-    <ion-nav-view name="tab-account"></ion-nav-view>
+    <ion-nav-view name="tab-setting"></ion-nav-view>
   </ion-tab>
+
 </ion-tabs>

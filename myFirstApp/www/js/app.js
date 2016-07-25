@@ -68,13 +68,49 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-
+  /*
   .state('tab.account', {
     url: '/account',
     views: {
       'tab-account': {
         templateUrl: 'templates/tab-account.html',
         controller: 'AccountCtrl'
+      }
+    }
+  })*/
+  .state('tab.index', {
+    url: '/index',
+    views: {
+      'tab-index': {
+        templateUrl: 'templates/tab-index.html',
+        controller: 'IndexCtrl'
+      }
+    }
+  })
+  .state('tab.card', {
+    url: '/card',
+    views: {
+      'tab-card': {
+        templateUrl: 'templates/tab-card.html',
+        controller: 'CardCtrl'
+      }
+    }
+  })
+  .state('tab.card-detail', {
+      url: '/cards/:cardId',
+      views: {
+        'tab-cards': {
+          templateUrl: 'templates/card-detail.html',
+          controller: 'CardDetailCtrl'
+        }
+      }
+    })
+  .state('tab.setting', {
+    url: '/setting',
+    views: {
+      'tab-setting': {
+        templateUrl: 'templates/tab-setting.html',
+        controller: 'SettingCtrl'
       }
     }
   });
